@@ -1,0 +1,9 @@
+export { default as gatheringRoutes } from './gatheringRoutes';
+export { default as placeRoutes } from './placeRoutes';
+export { default as userRoutes } from './userRoutes';
+export { default as authRoutes } from './authRoutes';
+export { default as conversationRoutes } from './conversationRoutes';
+export { default as notificationRoutes } from './notificationRoutes';
+export { default as interestRoutes } from './interestRoutes';
+export { default as adminRoutes } from './adminRoutes';
+export { default as webhookRoutes } from './webhookRoutes';

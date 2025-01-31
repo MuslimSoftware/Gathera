@@ -1,0 +1,10 @@
+.env
+node_modules/
+dist/
+
+scripts/places/photos/*.txt
+scripts/places/*.log
+scripts/places/*.json
+
+*.log
+*.tar

@@ -1,0 +1,3 @@
+export const MAX_PLACE_NAME_LENGTH = 100;
+export const MIN_PLACE_NAME_LENGTH = 1;
+export const MAX_GOOGLE_PLACE_ID_LENGTH = 255;

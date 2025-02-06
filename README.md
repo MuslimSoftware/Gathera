@@ -6,7 +6,7 @@ Gathera is a dynamic social networking platform that reimagines how people conne
 
 ## 🎯 Vision
 
-We believe the best connections happen in person, and the most memorable experiences are tied to places. Gathera bridges the gap between digital social networking and real-world interactions, making it easier than ever to meet people who share your interests at places you love.
+Gathera was created with the understanding that meaningful connections happen in person, and that memorable experiences are tied to places. The app bridges the gap between digital social networking and real-world interactions by helping users find others who share their interests at places they enjoy.
 
 ## ✨ Key Features
 

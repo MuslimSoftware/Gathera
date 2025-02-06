@@ -128,7 +128,7 @@ npm run build-image
 - `POST /cancel-follow-request/:userIdToCancel` - Cancel a sent follow request
 - `PATCH /interests` - Update user interests
 - `POST /details/upsert` - Update user details
-- `GET /borders/:user_id` - Get user's geographical borders
+- `GET /borders/:user_id` - Get user's profile border styles
 - `POST /report/:user_reported_id` - Report a user
 - `POST /block/:user_to_block_id` - Block a user
 - `POST /unblock/:user_to_unblock_id` - Unblock a user
@@ -217,7 +217,7 @@ npm run build-image
 
 - `POST /interest/create/:interest_name` - Create new interest category
 - `POST /interest/create-many` - Bulk create interest categories
-- `POST /borders/unlock/:user_id/:border` - Grant border access to user
+- `POST /borders/unlock/:user_id/:border` - Grant new profile border style to user
 - `POST /send-push-notification-to-all-users` - Send global push notification
 
 #### Maintenance

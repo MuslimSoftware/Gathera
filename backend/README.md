@@ -189,6 +189,77 @@ npm run build-image
 - `GET /unread` - Get count of unread notifications
 - `DELETE /delete/:notification_id` - Delete a notification
 
+### Admin Routes (`/api/admin`)
+
+> Note: All admin routes require admin authentication
+
+#### Data Management
+
+- `GET /search/:query` - Search across the database
+- `PATCH /update-field` - Update field across collections
+- `PATCH /update-field-manual` - Manual field updates
+- `DELETE /delete-places` - Delete places from database
+- `DELETE /user/delete/:user_id` - Delete specific user
+
+#### Place Management
+
+- `POST /add-new-places` - Add new places to the database
+- `PATCH /update-place-photos` - Update default photos for places
+- `POST /store-place-photos` - Store new place photos
+
+#### Scoring and Algorithms
+
+- `POST /users/calculate-trending-score` - Calculate user trending scores
+- `POST /places/calculate-trending-score` - Calculate place trending scores
+- `POST /gatherings/calculate-suggested-gatherings` - Generate gathering suggestions
+
+#### Feature Management
+
+- `POST /interest/create/:interest_name` - Create new interest category
+- `POST /interest/create-many` - Bulk create interest categories
+- `POST /borders/unlock/:user_id/:border` - Grant border access to user
+- `POST /send-push-notification-to-all-users` - Send global push notification
+
+#### Maintenance
+
+- `POST /script` - Run maintenance scripts
+
+## Algorithms
+
+### Trending Scores
+
+The application uses several algorithms to calculate trending scores:
+
+#### Places
+
+- Factors in total visits
+- Weighs recent gatherings more heavily
+- Considers user engagement and interactions
+- Adjusts for time decay
+
+#### Users
+
+- Based on follower growth rate
+- Considers gathering participation
+- Weighs content engagement
+- Factors in profile visits
+
+### Suggestion Engine
+
+Gathering suggestions are generated using:
+
+- User interests and preferences
+- Location proximity
+- Past gathering history
+- Social graph connections
+- Time-based availability
+
+### Location Clustering
+
+- Uses MongoDB geospatial queries
+- Implements map marker clustering
+- Optimizes for viewport performance
+
 ### Webhook Routes (`/api/webhook`)
 
 - RevenueCat subscription webhooks
